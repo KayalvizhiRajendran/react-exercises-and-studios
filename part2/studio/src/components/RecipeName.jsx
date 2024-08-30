@@ -2,15 +2,13 @@ import recipedata from "./recipe.json";
 import "./styling.css";
 
 function RecipeName() {
-
-  return(
+  return (
     <div>
-      {  recipedata.map((recepie)=>(
-         <h1> {recepie.name}</h1>
-        ))}
+      {recipedata.map((recepie) => (
+        <h1> {recepie.name}</h1>
+      ))}
     </div>
   );
- 
 }
 
 export default RecipeName;
